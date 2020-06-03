@@ -14,6 +14,9 @@
 		C83D22D3248839F60015F60D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83D22D2248839F60015F60D /* Assets.xcassets */; };
 		C83D22D6248839F60015F60D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83D22D4248839F60015F60D /* LaunchScreen.storyboard */; };
 		C83D22E1248839F60015F60D /* JapanesePronunciationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22E0248839F60015F60D /* JapanesePronunciationAppTests.swift */; };
+		C83D22EC248846870015F60D /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22EB248846870015F60D /* LessonTableViewController.swift */; };
+		C83D22EE248847360015F60D /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22ED248847360015F60D /* LessonTableViewCell.swift */; };
+		C896DE1F2488549D0080B363 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C896DE1E2488549D0080B363 /* Lesson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		C83D22DC248839F60015F60D /* JapanesePronunciationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapanesePronunciationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83D22E0248839F60015F60D /* JapanesePronunciationAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanesePronunciationAppTests.swift; sourceTree = "<group>"; };
 		C83D22E2248839F60015F60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C83D22EB248846870015F60D /* LessonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
+		C83D22ED248847360015F60D /* LessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
+		C896DE1E2488549D0080B363 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,9 @@
 				C83D22C9248839F20015F60D /* AppDelegate.swift */,
 				C83D22CB248839F20015F60D /* SceneDelegate.swift */,
 				C83D22CD248839F20015F60D /* ViewController.swift */,
+				C896DE1E2488549D0080B363 /* Lesson.swift */,
+				C83D22EB248846870015F60D /* LessonTableViewController.swift */,
+				C83D22ED248847360015F60D /* LessonTableViewCell.swift */,
 				C83D22CF248839F20015F60D /* Main.storyboard */,
 				C83D22D2248839F60015F60D /* Assets.xcassets */,
 				C83D22D4248839F60015F60D /* LaunchScreen.storyboard */,
@@ -202,6 +211,9 @@
 			files = (
 				C83D22CE248839F20015F60D /* ViewController.swift in Sources */,
 				C83D22CA248839F20015F60D /* AppDelegate.swift in Sources */,
+				C83D22EE248847360015F60D /* LessonTableViewCell.swift in Sources */,
+				C896DE1F2488549D0080B363 /* Lesson.swift in Sources */,
+				C83D22EC248846870015F60D /* LessonTableViewController.swift in Sources */,
 				C83D22CC248839F20015F60D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
