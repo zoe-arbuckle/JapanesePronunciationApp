@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C83D22CA248839F20015F60D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22C9248839F20015F60D /* AppDelegate.swift */; };
+		C83D22CC248839F20015F60D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22CB248839F20015F60D /* SceneDelegate.swift */; };
+		C83D22CE248839F20015F60D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22CD248839F20015F60D /* ViewController.swift */; };
+		C83D22D1248839F20015F60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83D22CF248839F20015F60D /* Main.storyboard */; };
+		C83D22D3248839F60015F60D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83D22D2248839F60015F60D /* Assets.xcassets */; };
+		C83D22D6248839F60015F60D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83D22D4248839F60015F60D /* LaunchScreen.storyboard */; };
+		C83D22E1248839F60015F60D /* JapanesePronunciationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22E0248839F60015F60D /* JapanesePronunciationAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C83D22DD248839F60015F60D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C83D22BE248839F20015F60D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C83D22C5248839F20015F60D;
+			remoteInfo = JapanesePronunciationApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C83D22C6248839F20015F60D /* JapanesePronunciationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapanesePronunciationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C83D22C9248839F20015F60D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C83D22CB248839F20015F60D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C83D22CD248839F20015F60D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C83D22D0248839F20015F60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C83D22D2248839F60015F60D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C83D22D5248839F60015F60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C83D22D7248839F60015F60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C83D22DC248839F60015F60D /* JapanesePronunciationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapanesePronunciationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C83D22E0248839F60015F60D /* JapanesePronunciationAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapanesePronunciationAppTests.swift; sourceTree = "<group>"; };
+		C83D22E2248839F60015F60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C83D22C3248839F20015F60D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C83D22D9248839F60015F60D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C83D22BD248839F20015F60D = {
+			isa = PBXGroup;
+			children = (
+				C83D22C8248839F20015F60D /* JapanesePronunciationApp */,
+				C83D22DF248839F60015F60D /* JapanesePronunciationAppTests */,
+				C83D22C7248839F20015F60D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C83D22C7248839F20015F60D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C83D22C6248839F20015F60D /* JapanesePronunciationApp.app */,
+				C83D22DC248839F60015F60D /* JapanesePronunciationAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C83D22C8248839F20015F60D /* JapanesePronunciationApp */ = {
+			isa = PBXGroup;
+			children = (
+				C83D22C9248839F20015F60D /* AppDelegate.swift */,
+				C83D22CB248839F20015F60D /* SceneDelegate.swift */,
+				C83D22CD248839F20015F60D /* ViewController.swift */,
+				C83D22CF248839F20015F60D /* Main.storyboard */,
+				C83D22D2248839F60015F60D /* Assets.xcassets */,
+				C83D22D4248839F60015F60D /* LaunchScreen.storyboard */,
+				C83D22D7248839F60015F60D /* Info.plist */,
+			);
+			path = JapanesePronunciationApp;
+			sourceTree = "<group>";
+		};
+		C83D22DF248839F60015F60D /* JapanesePronunciationAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C83D22E0248839F60015F60D /* JapanesePronunciationAppTests.swift */,
+				C83D22E2248839F60015F60D /* Info.plist */,
+			);
+			path = JapanesePronunciationAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C83D22C5248839F20015F60D /* JapanesePronunciationApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C83D22E5248839F60015F60D /* Build configuration list for PBXNativeTarget "JapanesePronunciationApp" */;
+			buildPhases = (
+				C83D22C2248839F20015F60D /* Sources */,
+				C83D22C3248839F20015F60D /* Frameworks */,
+				C83D22C4248839F20015F60D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JapanesePronunciationApp;
+			productName = JapanesePronunciationApp;
+			productReference = C83D22C6248839F20015F60D /* JapanesePronunciationApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C83D22DB248839F60015F60D /* JapanesePronunciationAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C83D22E8248839F60015F60D /* Build configuration list for PBXNativeTarget "JapanesePronunciationAppTests" */;
+			buildPhases = (
+				C83D22D8248839F60015F60D /* Sources */,
+				C83D22D9248839F60015F60D /* Frameworks */,
+				C83D22DA248839F60015F60D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C83D22DE248839F60015F60D /* PBXTargetDependency */,
+			);
+			name = JapanesePronunciationAppTests;
+			productName = JapanesePronunciationAppTests;
+			productReference = C83D22DC248839F60015F60D /* JapanesePronunciationAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C83D22BE248839F20015F60D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Zoe Arbuckle";
+				TargetAttributes = {
+					C83D22C5248839F20015F60D = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					C83D22DB248839F60015F60D = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = C83D22C5248839F20015F60D;
+					};
+				};
+			};
+			buildConfigurationList = C83D22C1248839F20015F60D /* Build configuration list for PBXProject "JapanesePronunciationApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C83D22BD248839F20015F60D;
+			productRefGroup = C83D22C7248839F20015F60D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C83D22C5248839F20015F60D /* JapanesePronunciationApp */,
+				C83D22DB248839F60015F60D /* JapanesePronunciationAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C83D22C4248839F20015F60D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C83D22D6248839F60015F60D /* LaunchScreen.storyboard in Resources */,
+				C83D22D3248839F60015F60D /* Assets.xcassets in Resources */,
+				C83D22D1248839F20015F60D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C83D22DA248839F60015F60D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C83D22C2248839F20015F60D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C83D22CE248839F20015F60D /* ViewController.swift in Sources */,
+				C83D22CA248839F20015F60D /* AppDelegate.swift in Sources */,
+				C83D22CC248839F20015F60D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C83D22D8248839F60015F60D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C83D22E1248839F60015F60D /* JapanesePronunciationAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C83D22DE248839F60015F60D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C83D22C5248839F20015F60D /* JapanesePronunciationApp */;
+			targetProxy = C83D22DD248839F60015F60D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C83D22CF248839F20015F60D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C83D22D0248839F20015F60D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C83D22D4248839F60015F60D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C83D22D5248839F60015F60D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C83D22E3248839F60015F60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C83D22E4248839F60015F60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C83D22E6248839F60015F60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65Q7GRWC33;
+				INFOPLIST_FILE = JapanesePronunciationApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.JapanesePronunciationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C83D22E7248839F60015F60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65Q7GRWC33;
+				INFOPLIST_FILE = JapanesePronunciationApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.JapanesePronunciationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C83D22E9248839F60015F60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65Q7GRWC33;
+				INFOPLIST_FILE = JapanesePronunciationAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.JapanesePronunciationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapanesePronunciationApp.app/JapanesePronunciationApp";
+			};
+			name = Debug;
+		};
+		C83D22EA248839F60015F60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 65Q7GRWC33;
+				INFOPLIST_FILE = JapanesePronunciationAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.JapanesePronunciationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapanesePronunciationApp.app/JapanesePronunciationApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C83D22C1248839F20015F60D /* Build configuration list for PBXProject "JapanesePronunciationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C83D22E3248839F60015F60D /* Debug */,
+				C83D22E4248839F60015F60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C83D22E5248839F60015F60D /* Build configuration list for PBXNativeTarget "JapanesePronunciationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C83D22E6248839F60015F60D /* Debug */,
+				C83D22E7248839F60015F60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C83D22E8248839F60015F60D /* Build configuration list for PBXNativeTarget "JapanesePronunciationAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C83D22E9248839F60015F60D /* Debug */,
+				C83D22EA248839F60015F60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C83D22BE248839F20015F60D /* Project object */;
+}
