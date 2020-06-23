@@ -14,10 +14,11 @@ class Lesson {
     var name: String
     var description: String
     var photo: UIImage?
+    var lessonInfo: String
     
     //MARK: Initialization
     
-    init?(name: String, description: String, photo: UIImage?){
+    init?(name: String, description: String, photo: UIImage?, lessonInfo: String){
         if name.isEmpty || description.isEmpty {
             return nil
         }
@@ -26,5 +27,6 @@ class Lesson {
         self.name = name
         self.description = description
         self.photo = photo
+        self.lessonInfo = lessonInfo
     }
 }

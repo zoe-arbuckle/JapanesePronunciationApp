@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C835BF8724A2748400FB4827 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C835BF8624A2748400FB4827 /* QuizViewController.swift */; };
 		C83D22CA248839F20015F60D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22C9248839F20015F60D /* AppDelegate.swift */; };
 		C83D22CC248839F20015F60D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22CB248839F20015F60D /* SceneDelegate.swift */; };
-		C83D22CE248839F20015F60D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22CD248839F20015F60D /* ViewController.swift */; };
+		C83D22CE248839F20015F60D /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22CD248839F20015F60D /* LessonViewController.swift */; };
 		C83D22D1248839F20015F60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83D22CF248839F20015F60D /* Main.storyboard */; };
 		C83D22D3248839F60015F60D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C83D22D2248839F60015F60D /* Assets.xcassets */; };
 		C83D22D6248839F60015F60D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C83D22D4248839F60015F60D /* LaunchScreen.storyboard */; };
@@ -30,10 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C835BF8624A2748400FB4827 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		C83D22C6248839F20015F60D /* JapanesePronunciationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapanesePronunciationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83D22C9248839F20015F60D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C83D22CB248839F20015F60D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C83D22CD248839F20015F60D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C83D22CD248839F20015F60D /* LessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
 		C83D22D0248839F20015F60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C83D22D2248839F60015F60D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C83D22D5248839F60015F60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,7 +89,8 @@
 			children = (
 				C83D22C9248839F20015F60D /* AppDelegate.swift */,
 				C83D22CB248839F20015F60D /* SceneDelegate.swift */,
-				C83D22CD248839F20015F60D /* ViewController.swift */,
+				C835BF8624A2748400FB4827 /* QuizViewController.swift */,
+				C83D22CD248839F20015F60D /* LessonViewController.swift */,
 				C896DE1E2488549D0080B363 /* Lesson.swift */,
 				C83D22EB248846870015F60D /* LessonTableViewController.swift */,
 				C83D22ED248847360015F60D /* LessonTableViewCell.swift */,
@@ -209,7 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C83D22CE248839F20015F60D /* ViewController.swift in Sources */,
+				C83D22CE248839F20015F60D /* LessonViewController.swift in Sources */,
+				C835BF8724A2748400FB4827 /* QuizViewController.swift in Sources */,
 				C83D22CA248839F20015F60D /* AppDelegate.swift in Sources */,
 				C83D22EE248847360015F60D /* LessonTableViewCell.swift in Sources */,
 				C896DE1F2488549D0080B363 /* Lesson.swift in Sources */,
