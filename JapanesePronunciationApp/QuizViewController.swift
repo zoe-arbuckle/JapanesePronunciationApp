@@ -44,7 +44,7 @@ class QuizViewController: UIViewController {
             print(error)
         }
         
-        questions = [Question(question: "Which is correct?", answers: ["Not this", "This"], answer: 1, audioPlayer: audio), Question(question: "Which is correct?", answers: ["This", "Not this"], answer: 0, audioPlayer: audio)]
+        questions = [Question(question: "Identify the word you hear", answers: ["ときどき", "どきどき"], answer: 1, audioPlayer: audio), Question(question: "Select the correct spelling", answers: ["だいがく", "たいがく"], answer: 0, audioPlayer: audio)]
         questions.shuffle() //randomize
         
         NextButton.setTitle("Next Question", for: .normal)
