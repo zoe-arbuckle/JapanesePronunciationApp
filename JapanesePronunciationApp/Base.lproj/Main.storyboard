@@ -184,14 +184,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJG-VL-Iv0">
-                                <rect key="frame" x="20" y="85" width="1326" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJG-VL-Iv0">
+                                <rect key="frame" x="20" y="85" width="1326" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hC-3L-nvP">
-                                <rect key="frame" x="19" y="295" width="1326" height="86"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hC-3L-nvP">
+                                <rect key="frame" x="20" y="238.5" width="1326" height="30"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -200,8 +200,8 @@
                                     <action selector="buttonTwo:" destination="TdU-QG-UJp" eventType="touchUpInside" id="XEM-Dv-uMH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kli-us-x2x">
-                                <rect key="frame" x="20" y="166" width="1326" height="86"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kli-us-x2x">
+                                <rect key="frame" x="20" y="165.5" width="1326" height="30"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -210,28 +210,55 @@
                                     <action selector="buttonOne:" destination="TdU-QG-UJp" eventType="touchUpInside" id="Kpj-Vp-TuT"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ue0-hm-r1c">
+                                <rect key="frame" x="20" y="914" width="1326" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2Q-8A-uvR">
+                                        <rect key="frame" x="0.0" y="0.0" width="1326" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="contentStretch" x="0.59999999999999998" y="0.0" width="1" height="1"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMV-hP-dut">
+                                        <rect key="frame" x="0.0" y="60" width="1326" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextQuestion:" destination="TdU-QG-UJp" eventType="touchUpInside" id="lIz-43-pRY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="kli-us-x2x" firstAttribute="centerX" secondItem="oI2-Um-8N9" secondAttribute="centerX" id="4Pr-KW-O6K"/>
-                            <constraint firstItem="oI2-Um-8N9" firstAttribute="bottom" secondItem="wJG-VL-Iv0" secondAttribute="bottom" constant="918" id="8M9-Yi-ApQ"/>
-                            <constraint firstItem="wJG-VL-Iv0" firstAttribute="centerX" secondItem="oI2-Um-8N9" secondAttribute="centerX" id="9Mf-XL-mKa"/>
-                            <constraint firstItem="oI2-Um-8N9" firstAttribute="trailing" secondItem="kli-us-x2x" secondAttribute="trailing" constant="20" id="BZw-ez-PIJ"/>
-                            <constraint firstItem="wJG-VL-Iv0" firstAttribute="leading" secondItem="oI2-Um-8N9" secondAttribute="leading" id="ILp-6r-3YI"/>
-                            <constraint firstItem="kli-us-x2x" firstAttribute="top" secondItem="wJG-VL-Iv0" secondAttribute="bottom" constant="55" id="LTM-EK-pka"/>
-                            <constraint firstItem="wJG-VL-Iv0" firstAttribute="centerY" secondItem="oI2-Um-8N9" secondAttribute="centerY" id="MEq-oF-rkX"/>
-                            <constraint firstItem="oI2-Um-8N9" firstAttribute="trailing" secondItem="0hC-3L-nvP" secondAttribute="trailing" constant="20" id="OdY-gA-md4"/>
-                            <constraint firstItem="0hC-3L-nvP" firstAttribute="centerX" secondItem="oI2-Um-8N9" secondAttribute="centerX" id="chM-uO-pLY"/>
-                            <constraint firstItem="oI2-Um-8N9" firstAttribute="trailing" secondItem="wJG-VL-Iv0" secondAttribute="trailing" id="fII-8k-ird"/>
-                            <constraint firstItem="wJG-VL-Iv0" firstAttribute="top" secondItem="oI2-Um-8N9" secondAttribute="top" constant="85" id="mf6-l3-uvK"/>
-                            <constraint firstItem="0hC-3L-nvP" firstAttribute="leading" secondItem="oI2-Um-8N9" secondAttribute="leading" constant="20" id="qXa-gu-feb"/>
-                            <constraint firstItem="kli-us-x2x" firstAttribute="leading" secondItem="oI2-Um-8N9" secondAttribute="leading" constant="20" id="u8Y-sr-i5u"/>
-                            <constraint firstItem="0hC-3L-nvP" firstAttribute="top" secondItem="kli-us-x2x" secondAttribute="bottom" constant="48" id="yIy-6k-3dq"/>
+                            <constraint firstItem="wJG-VL-Iv0" firstAttribute="top" secondItem="oI2-Um-8N9" secondAttribute="top" constant="85" id="1MA-Ho-7L3"/>
+                            <constraint firstItem="wJG-VL-Iv0" firstAttribute="leading" secondItem="oI2-Um-8N9" secondAttribute="leading" constant="20" id="2JD-MM-IUT"/>
+                            <constraint firstItem="oI2-Um-8N9" firstAttribute="trailing" secondItem="ue0-hm-r1c" secondAttribute="trailing" constant="20" id="3pF-xj-4pB"/>
+                            <constraint firstItem="0hC-3L-nvP" firstAttribute="leading" secondItem="oI2-Um-8N9" secondAttribute="leading" constant="20" id="84C-bO-jxB"/>
+                            <constraint firstItem="kli-us-x2x" firstAttribute="top" secondItem="wJG-VL-Iv0" secondAttribute="bottom" constant="60" id="B8s-Zs-isd"/>
+                            <constraint firstItem="oI2-Um-8N9" firstAttribute="trailing" secondItem="ue0-hm-r1c" secondAttribute="trailing" constant="20" id="J29-N5-4ZF"/>
+                            <constraint firstItem="0hC-3L-nvP" firstAttribute="top" secondItem="kli-us-x2x" secondAttribute="bottom" constant="43" id="JJM-XA-p9m"/>
+                            <constraint firstItem="oI2-Um-8N9" firstAttribute="bottom" secondItem="ue0-hm-r1c" secondAttribute="bottom" constant="20" id="QIe-vj-qVg"/>
+                            <constraint firstItem="ue0-hm-r1c" firstAttribute="leading" secondItem="oI2-Um-8N9" secondAttribute="leading" constant="20" id="Td1-Im-Pwo"/>
+                            <constraint firstItem="oI2-Um-8N9" firstAttribute="trailing" secondItem="0hC-3L-nvP" secondAttribute="trailing" constant="20" id="cFO-cL-vp2"/>
+                            <constraint firstItem="oI2-Um-8N9" firstAttribute="trailing" secondItem="wJG-VL-Iv0" secondAttribute="trailing" constant="20" id="dvr-90-dkk"/>
+                            <constraint firstItem="kli-us-x2x" firstAttribute="leading" secondItem="oI2-Um-8N9" secondAttribute="leading" constant="20" id="fTQ-Pr-DjB"/>
+                            <constraint firstItem="ue0-hm-r1c" firstAttribute="leading" secondItem="oI2-Um-8N9" secondAttribute="leading" constant="20" id="iYs-f1-Aee"/>
+                            <constraint firstItem="oI2-Um-8N9" firstAttribute="trailing" secondItem="kli-us-x2x" secondAttribute="trailing" constant="20" id="ozG-Zn-7IW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oI2-Um-8N9"/>
                     </view>
                     <connections>
+                        <outlet property="NextButton" destination="UMV-hP-dut" id="lkf-dP-cuS"/>
+                        <outlet property="NextStackView" destination="ue0-hm-r1c" id="bwf-N4-ptn"/>
                         <outlet property="QLabel" destination="wJG-VL-Iv0" id="jF8-zn-lXY"/>
+                        <outlet property="ResultLabel" destination="a2Q-8A-uvR" id="3FI-Sg-raF"/>
                         <outletCollection property="Buttons" destination="kli-us-x2x" collectionClass="NSMutableArray" id="6lj-4S-OXe"/>
                         <outletCollection property="Buttons" destination="0hC-3L-nvP" collectionClass="NSMutableArray" id="H4G-lA-xHY"/>
                     </connections>
