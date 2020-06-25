@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 struct Question {
     var question : String!
     var answers : [String]!
     var answer : Int!
+    var audioPlayer: AVAudioPlayer!
 }
 
 class QuizViewController: UIViewController {
@@ -22,15 +24,27 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var ResultLabel: UILabel!
     @IBOutlet weak var NextButton: UIButton!
     @IBOutlet weak var NextStackView: UIStackView!
+    @IBOutlet weak var SoundButton: UIButton!
     
     var questions = [Question]()
     var qNumber = Int()
     var ansNumber = Int()
+    var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        questions = [Question(question: "Which is correct?", answers: ["Not this", "This"], answer: 1), Question(question: "Which is correct?", answers: ["This", "Not this"], answer: 0)]
+        //sound file
+        let sound = Bundle.main.path(forResource: "windsound", ofType: "mp3")
+        var audio = AVAudioPlayer()
+        
+        do {
+            audio = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        } catch {
+            print(error)
+        }
+        
+        questions = [Question(question: "Which is correct?", answers: ["Not this", "This"], answer: 1, audioPlayer: audio), Question(question: "Which is correct?", answers: ["This", "Not this"], answer: 0, audioPlayer: audio)]
         questions.shuffle() //randomize
         
         NextButton.setTitle("Next Question", for: .normal)
@@ -54,6 +68,8 @@ class QuizViewController: UIViewController {
                 Buttons[i].setTitle(questions[qNumber].answers[i], for: .normal)
             }
             
+            audioPlayer = questions[qNumber].audioPlayer
+            
             //prevent repetition
             questions.remove(at: qNumber)
         } else {
@@ -74,6 +90,10 @@ class QuizViewController: UIViewController {
         NextStackView.isHidden = false
         ResultLabel.isHidden = false
         NextButton.isHidden = false
+    }
+    
+    @IBAction func playSound(_ sender: Any) {
+       audioPlayer.play()
     }
     
     @IBAction func buttonOne(_ sender: Any) {
@@ -101,6 +121,7 @@ class QuizViewController: UIViewController {
     }
     
     @IBAction func nextQuestion(_ sender: Any) {
+        audioPlayer.stop()
         hide()
         pickQuestion()
         for b in Buttons{

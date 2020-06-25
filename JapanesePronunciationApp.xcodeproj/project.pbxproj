@@ -18,6 +18,8 @@
 		C83D22EC248846870015F60D /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22EB248846870015F60D /* LessonTableViewController.swift */; };
 		C83D22EE248847360015F60D /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22ED248847360015F60D /* LessonTableViewCell.swift */; };
 		C896DE1F2488549D0080B363 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C896DE1E2488549D0080B363 /* Lesson.swift */; };
+		C8BABD4E24A530D80054AE5B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BABD4D24A530D80054AE5B /* AVFoundation.framework */; };
+		C8BABD5124A535400054AE5B /* windsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8BABD5024A535400054AE5B /* windsound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		C83D22EB248846870015F60D /* LessonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
 		C83D22ED248847360015F60D /* LessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
 		C896DE1E2488549D0080B363 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		C8BABD4D24A530D80054AE5B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C8BABD5024A535400054AE5B /* windsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = windsound.mp3; path = ../../../../../Downloads/windsound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8BABD4E24A530D80054AE5B /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +77,7 @@
 				C83D22C8248839F20015F60D /* JapanesePronunciationApp */,
 				C83D22DF248839F60015F60D /* JapanesePronunciationAppTests */,
 				C83D22C7248839F20015F60D /* Products */,
+				C8BABD4C24A530D70054AE5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +93,7 @@
 		C83D22C8248839F20015F60D /* JapanesePronunciationApp */ = {
 			isa = PBXGroup;
 			children = (
+				C8BABD4F24A532590054AE5B /* Sounds */,
 				C83D22C9248839F20015F60D /* AppDelegate.swift */,
 				C83D22CB248839F20015F60D /* SceneDelegate.swift */,
 				C835BF8624A2748400FB4827 /* QuizViewController.swift */,
@@ -109,6 +116,22 @@
 				C83D22E2248839F60015F60D /* Info.plist */,
 			);
 			path = JapanesePronunciationAppTests;
+			sourceTree = "<group>";
+		};
+		C8BABD4C24A530D70054AE5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8BABD4D24A530D80054AE5B /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8BABD4F24A532590054AE5B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C8BABD5024A535400054AE5B /* windsound.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +217,7 @@
 			files = (
 				C83D22D6248839F60015F60D /* LaunchScreen.storyboard in Resources */,
 				C83D22D3248839F60015F60D /* Assets.xcassets in Resources */,
+				C8BABD5124A535400054AE5B /* windsound.mp3 in Resources */,
 				C83D22D1248839F20015F60D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
