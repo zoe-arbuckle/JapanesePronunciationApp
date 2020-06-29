@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E29FFBA7761FECB403DAEE4 /* Pods_JapanesePronunciationAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5049738ECEE492E08EF076F3 /* Pods_JapanesePronunciationAppTests.framework */; };
+		60E2B55A892398AFC700AD40 /* Pods_JapanesePronunciationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27489319FF317EB8EBF59C89 /* Pods_JapanesePronunciationApp.framework */; };
+		C80B7BD824AA507900C855D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C80B7BD724AA507900C855D6 /* GoogleService-Info.plist */; };
 		C835BF8724A2748400FB4827 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C835BF8624A2748400FB4827 /* QuizViewController.swift */; };
 		C83D22CA248839F20015F60D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22C9248839F20015F60D /* AppDelegate.swift */; };
 		C83D22CC248839F20015F60D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22CB248839F20015F60D /* SceneDelegate.swift */; };
@@ -33,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		27489319FF317EB8EBF59C89 /* Pods_JapanesePronunciationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JapanesePronunciationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5049738ECEE492E08EF076F3 /* Pods_JapanesePronunciationAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JapanesePronunciationAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB785A0722500A546F91C306 /* Pods-JapanesePronunciationAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapanesePronunciationAppTests.release.xcconfig"; path = "Target Support Files/Pods-JapanesePronunciationAppTests/Pods-JapanesePronunciationAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		AE0B3D114B36502140AF3B38 /* Pods-JapanesePronunciationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapanesePronunciationApp.release.xcconfig"; path = "Target Support Files/Pods-JapanesePronunciationApp/Pods-JapanesePronunciationApp.release.xcconfig"; sourceTree = "<group>"; };
+		B2EC5C8D2518709B43C4CD0E /* Pods-JapanesePronunciationAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapanesePronunciationAppTests.debug.xcconfig"; path = "Target Support Files/Pods-JapanesePronunciationAppTests/Pods-JapanesePronunciationAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C80B7BD724AA507900C855D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C835BF8624A2748400FB4827 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		C83D22C6248839F20015F60D /* JapanesePronunciationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapanesePronunciationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C83D22C9248839F20015F60D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +59,7 @@
 		C896DE1E2488549D0080B363 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		C8BABD4D24A530D80054AE5B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C8BABD5024A535400054AE5B /* windsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = windsound.mp3; path = ../../../../../Downloads/windsound.mp3; sourceTree = "<group>"; };
+		F029CBB0215E9C9F1D855BBF /* Pods-JapanesePronunciationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapanesePronunciationApp.debug.xcconfig"; path = "Target Support Files/Pods-JapanesePronunciationApp/Pods-JapanesePronunciationApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8BABD4E24A530D80054AE5B /* AVFoundation.framework in Frameworks */,
+				60E2B55A892398AFC700AD40 /* Pods_JapanesePronunciationApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +76,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E29FFBA7761FECB403DAEE4 /* Pods_JapanesePronunciationAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA685EE69045B01472435F6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F029CBB0215E9C9F1D855BBF /* Pods-JapanesePronunciationApp.debug.xcconfig */,
+				AE0B3D114B36502140AF3B38 /* Pods-JapanesePronunciationApp.release.xcconfig */,
+				B2EC5C8D2518709B43C4CD0E /* Pods-JapanesePronunciationAppTests.debug.xcconfig */,
+				AB785A0722500A546F91C306 /* Pods-JapanesePronunciationAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C83D22BD248839F20015F60D = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +102,7 @@
 				C83D22DF248839F60015F60D /* JapanesePronunciationAppTests */,
 				C83D22C7248839F20015F60D /* Products */,
 				C8BABD4C24A530D70054AE5B /* Frameworks */,
+				BA685EE69045B01472435F6F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +130,7 @@
 				C83D22D2248839F60015F60D /* Assets.xcassets */,
 				C83D22D4248839F60015F60D /* LaunchScreen.storyboard */,
 				C83D22D7248839F60015F60D /* Info.plist */,
+				C80B7BD724AA507900C855D6 /* GoogleService-Info.plist */,
 			);
 			path = JapanesePronunciationApp;
 			sourceTree = "<group>";
@@ -122,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				C8BABD4D24A530D80054AE5B /* AVFoundation.framework */,
+				27489319FF317EB8EBF59C89 /* Pods_JapanesePronunciationApp.framework */,
+				5049738ECEE492E08EF076F3 /* Pods_JapanesePronunciationAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C83D22E5248839F60015F60D /* Build configuration list for PBXNativeTarget "JapanesePronunciationApp" */;
 			buildPhases = (
+				204B3FD015D9476F455500FF /* [CP] Check Pods Manifest.lock */,
 				C83D22C2248839F20015F60D /* Sources */,
 				C83D22C3248839F20015F60D /* Frameworks */,
 				C83D22C4248839F20015F60D /* Resources */,
+				12793E2E86DDDC08344C55E2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,6 +188,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C83D22E8248839F60015F60D /* Build configuration list for PBXNativeTarget "JapanesePronunciationAppTests" */;
 			buildPhases = (
+				5D93212936D30B5875CC72E5 /* [CP] Check Pods Manifest.lock */,
 				C83D22D8248839F60015F60D /* Sources */,
 				C83D22D9248839F60015F60D /* Frameworks */,
 				C83D22DA248839F60015F60D /* Resources */,
@@ -217,6 +248,7 @@
 			files = (
 				C83D22D6248839F60015F60D /* LaunchScreen.storyboard in Resources */,
 				C83D22D3248839F60015F60D /* Assets.xcassets in Resources */,
+				C80B7BD824AA507900C855D6 /* GoogleService-Info.plist in Resources */,
 				C8BABD5124A535400054AE5B /* windsound.mp3 in Resources */,
 				C83D22D1248839F20015F60D /* Main.storyboard in Resources */,
 			);
@@ -230,6 +262,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12793E2E86DDDC08344C55E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JapanesePronunciationApp/Pods-JapanesePronunciationApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JapanesePronunciationApp/Pods-JapanesePronunciationApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JapanesePronunciationApp/Pods-JapanesePronunciationApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		204B3FD015D9476F455500FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JapanesePronunciationApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D93212936D30B5875CC72E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JapanesePronunciationAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C83D22C2248839F20015F60D /* Sources */ = {
@@ -400,6 +496,7 @@
 		};
 		C83D22E6248839F60015F60D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F029CBB0215E9C9F1D855BBF /* Pods-JapanesePronunciationApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -418,6 +515,7 @@
 		};
 		C83D22E7248839F60015F60D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0B3D114B36502140AF3B38 /* Pods-JapanesePronunciationApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -436,6 +534,7 @@
 		};
 		C83D22E9248839F60015F60D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2EC5C8D2518709B43C4CD0E /* Pods-JapanesePronunciationAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -458,6 +557,7 @@
 		};
 		C83D22EA248839F60015F60D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB785A0722500A546F91C306 /* Pods-JapanesePronunciationAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
