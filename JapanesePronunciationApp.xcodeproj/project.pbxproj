@@ -17,9 +17,18 @@
 		C83D22E1248839F60015F60D /* JapanesePronunciationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22E0248839F60015F60D /* JapanesePronunciationAppTests.swift */; };
 		C83D22EC248846870015F60D /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22EB248846870015F60D /* LessonTableViewController.swift */; };
 		C83D22EE248847360015F60D /* LessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83D22ED248847360015F60D /* LessonTableViewCell.swift */; };
+		C84FCFE824AFB0B900EA2636 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BABD4D24A530D80054AE5B /* AVFoundation.framework */; };
 		C896DE1F2488549D0080B363 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = C896DE1E2488549D0080B363 /* Lesson.swift */; };
-		C8BABD4E24A530D80054AE5B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8BABD4D24A530D80054AE5B /* AVFoundation.framework */; };
-		C8BABD5124A535400054AE5B /* windsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8BABD5024A535400054AE5B /* windsound.mp3 */; };
+		C8E7DA1224AFB39B003DDD7C /* hiza.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA0824AFB39B003DDD7C /* hiza.mp3 */; };
+		C8E7DA1324AFB39B003DDD7C /* gaisya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA0924AFB39B003DDD7C /* gaisya.mp3 */; };
+		C8E7DA1424AFB39B003DDD7C /* taigaku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA0A24AFB39B003DDD7C /* taigaku.mp3 */; };
+		C8E7DA1524AFB39B003DDD7C /* tokidoki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA0B24AFB39B003DDD7C /* tokidoki.mp3 */; };
+		C8E7DA1624AFB39B003DDD7C /* daigaku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA0C24AFB39B003DDD7C /* daigaku.mp3 */; };
+		C8E7DA1724AFB39B003DDD7C /* dokidoki.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA0D24AFB39B003DDD7C /* dokidoki.mp3 */; };
+		C8E7DA1824AFB39B003DDD7C /* biza.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA0E24AFB39B003DDD7C /* biza.mp3 */; };
+		C8E7DA1924AFB39B003DDD7C /* kaikoku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA0F24AFB39B003DDD7C /* kaikoku.mp3 */; };
+		C8E7DA1A24AFB39B003DDD7C /* kaisya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA1024AFB39B003DDD7C /* kaisya.mp3 */; };
+		C8E7DA1B24AFB39B003DDD7C /* gaikoku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA1124AFB39B003DDD7C /* gaikoku.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +58,16 @@
 		C83D22ED248847360015F60D /* LessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewCell.swift; sourceTree = "<group>"; };
 		C896DE1E2488549D0080B363 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
 		C8BABD4D24A530D80054AE5B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		C8BABD5024A535400054AE5B /* windsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = windsound.mp3; path = ../../../../../Downloads/windsound.mp3; sourceTree = "<group>"; };
+		C8E7DA0824AFB39B003DDD7C /* hiza.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hiza.mp3; sourceTree = "<group>"; };
+		C8E7DA0924AFB39B003DDD7C /* gaisya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gaisya.mp3; sourceTree = "<group>"; };
+		C8E7DA0A24AFB39B003DDD7C /* taigaku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = taigaku.mp3; sourceTree = "<group>"; };
+		C8E7DA0B24AFB39B003DDD7C /* tokidoki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tokidoki.mp3; sourceTree = "<group>"; };
+		C8E7DA0C24AFB39B003DDD7C /* daigaku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = daigaku.mp3; sourceTree = "<group>"; };
+		C8E7DA0D24AFB39B003DDD7C /* dokidoki.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dokidoki.mp3; sourceTree = "<group>"; };
+		C8E7DA0E24AFB39B003DDD7C /* biza.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = biza.mp3; sourceTree = "<group>"; };
+		C8E7DA0F24AFB39B003DDD7C /* kaikoku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kaikoku.mp3; sourceTree = "<group>"; };
+		C8E7DA1024AFB39B003DDD7C /* kaisya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kaisya.mp3; sourceTree = "<group>"; };
+		C8E7DA1124AFB39B003DDD7C /* gaikoku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gaikoku.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8BABD4E24A530D80054AE5B /* AVFoundation.framework in Frameworks */,
+				C84FCFE824AFB0B900EA2636 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +111,7 @@
 		C83D22C8248839F20015F60D /* JapanesePronunciationApp */ = {
 			isa = PBXGroup;
 			children = (
-				C8BABD4F24A532590054AE5B /* Sounds */,
+				C8E7D9F124AFB1B4003DDD7C /* Sounds */,
 				C83D22C9248839F20015F60D /* AppDelegate.swift */,
 				C83D22CB248839F20015F60D /* SceneDelegate.swift */,
 				C835BF8624A2748400FB4827 /* QuizViewController.swift */,
@@ -126,10 +144,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C8BABD4F24A532590054AE5B /* Sounds */ = {
+		C8E7D9F124AFB1B4003DDD7C /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				C8BABD5024A535400054AE5B /* windsound.mp3 */,
+				C8E7DA0E24AFB39B003DDD7C /* biza.mp3 */,
+				C8E7DA0C24AFB39B003DDD7C /* daigaku.mp3 */,
+				C8E7DA0D24AFB39B003DDD7C /* dokidoki.mp3 */,
+				C8E7DA1124AFB39B003DDD7C /* gaikoku.mp3 */,
+				C8E7DA0924AFB39B003DDD7C /* gaisya.mp3 */,
+				C8E7DA0824AFB39B003DDD7C /* hiza.mp3 */,
+				C8E7DA0F24AFB39B003DDD7C /* kaikoku.mp3 */,
+				C8E7DA1024AFB39B003DDD7C /* kaisya.mp3 */,
+				C8E7DA0A24AFB39B003DDD7C /* taigaku.mp3 */,
+				C8E7DA0B24AFB39B003DDD7C /* tokidoki.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -217,8 +244,17 @@
 			files = (
 				C83D22D6248839F60015F60D /* LaunchScreen.storyboard in Resources */,
 				C83D22D3248839F60015F60D /* Assets.xcassets in Resources */,
-				C8BABD5124A535400054AE5B /* windsound.mp3 in Resources */,
+				C8E7DA1A24AFB39B003DDD7C /* kaisya.mp3 in Resources */,
+				C8E7DA1524AFB39B003DDD7C /* tokidoki.mp3 in Resources */,
+				C8E7DA1224AFB39B003DDD7C /* hiza.mp3 in Resources */,
+				C8E7DA1724AFB39B003DDD7C /* dokidoki.mp3 in Resources */,
+				C8E7DA1424AFB39B003DDD7C /* taigaku.mp3 in Resources */,
+				C8E7DA1924AFB39B003DDD7C /* kaikoku.mp3 in Resources */,
+				C8E7DA1824AFB39B003DDD7C /* biza.mp3 in Resources */,
+				C8E7DA1B24AFB39B003DDD7C /* gaikoku.mp3 in Resources */,
+				C8E7DA1324AFB39B003DDD7C /* gaisya.mp3 in Resources */,
 				C83D22D1248839F20015F60D /* Main.storyboard in Resources */,
+				C8E7DA1624AFB39B003DDD7C /* daigaku.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
