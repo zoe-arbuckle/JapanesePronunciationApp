@@ -35,16 +35,19 @@ class QuizViewController: UIViewController {
         super.viewDidLoad()
         
         //sound file
-        let sound = Bundle.main.path(forResource: "windsound", ofType: "mp3")
-        var audio = AVAudioPlayer()
+        let sound1 = Bundle.main.path(forResource: "dokidoki", ofType: "mp3")
+        var audio1 = AVAudioPlayer()
+        let sound2 = Bundle.main.path(forResource: "daigaku", ofType: "mp3")
+        var audio2 = AVAudioPlayer()
         
         do {
-            audio = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+            audio1 = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound1!))
+            audio2 = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound2!))
         } catch {
             print(error)
         }
         
-        questions = [Question(question: "Identify the word you hear", answers: ["ときどき", "どきどき"], answer: 1, audioPlayer: audio), Question(question: "Select the correct spelling", answers: ["だいがく", "たいがく"], answer: 0, audioPlayer: audio)]
+        questions = [Question(question: "Identify the word you hear", answers: ["ときどき", "どきどき"], answer: 1, audioPlayer: audio1), Question(question: "Select the correct spelling", answers: ["だいがく", "たいがく"], answer: 0, audioPlayer: audio2)]
         questions.shuffle() //randomize
         
         NextButton.setTitle("Next Question", for: .normal)
