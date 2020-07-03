@@ -29,6 +29,7 @@
 		C8E7DA1924AFB39B003DDD7C /* kaikoku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA0F24AFB39B003DDD7C /* kaikoku.mp3 */; };
 		C8E7DA1A24AFB39B003DDD7C /* kaisya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA1024AFB39B003DDD7C /* kaisya.mp3 */; };
 		C8E7DA1B24AFB39B003DDD7C /* gaikoku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA1124AFB39B003DDD7C /* gaikoku.mp3 */; };
+		C8E7DA1D24AFB5F1003DDD7C /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E7DA1C24AFB5F1003DDD7C /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		C8E7DA0F24AFB39B003DDD7C /* kaikoku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kaikoku.mp3; sourceTree = "<group>"; };
 		C8E7DA1024AFB39B003DDD7C /* kaisya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kaisya.mp3; sourceTree = "<group>"; };
 		C8E7DA1124AFB39B003DDD7C /* gaikoku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gaikoku.mp3; sourceTree = "<group>"; };
+		C8E7DA1C24AFB5F1003DDD7C /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +116,10 @@
 				C8E7D9F124AFB1B4003DDD7C /* Sounds */,
 				C83D22C9248839F20015F60D /* AppDelegate.swift */,
 				C83D22CB248839F20015F60D /* SceneDelegate.swift */,
+				C8E7DA1C24AFB5F1003DDD7C /* Quiz.swift */,
 				C835BF8624A2748400FB4827 /* QuizViewController.swift */,
-				C83D22CD248839F20015F60D /* LessonViewController.swift */,
 				C896DE1E2488549D0080B363 /* Lesson.swift */,
+				C83D22CD248839F20015F60D /* LessonViewController.swift */,
 				C83D22EB248846870015F60D /* LessonTableViewController.swift */,
 				C83D22ED248847360015F60D /* LessonTableViewCell.swift */,
 				C83D22CF248839F20015F60D /* Main.storyboard */,
@@ -278,6 +281,7 @@
 				C83D22EE248847360015F60D /* LessonTableViewCell.swift in Sources */,
 				C896DE1F2488549D0080B363 /* Lesson.swift in Sources */,
 				C83D22EC248846870015F60D /* LessonTableViewController.swift in Sources */,
+				C8E7DA1D24AFB5F1003DDD7C /* Quiz.swift in Sources */,
 				C83D22CC248839F20015F60D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

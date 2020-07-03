@@ -9,13 +9,6 @@
 import UIKit
 import AVFoundation
 
-struct Question {
-    var question : String!
-    var answers : [String]!
-    var answer : Int!
-    var audioPlayer: AVAudioPlayer!
-}
-
 class QuizViewController: UIViewController {
     
     //should add a display of correct/incorrect which is hidden
@@ -26,61 +19,39 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var NextStackView: UIStackView!
     @IBOutlet weak var SoundButton: UIButton!
     
-    var questions = [Question]()
-    var qNumber = Int()
+    var quiz = Quiz(lessonName: "Introduction")!
     var ansNumber = Int()
     var audioPlayer = AVAudioPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //sound file
-        let sound1 = Bundle.main.path(forResource: "dokidoki", ofType: "mp3")
-        var audio1 = AVAudioPlayer()
-        let sound2 = Bundle.main.path(forResource: "daigaku", ofType: "mp3")
-        var audio2 = AVAudioPlayer()
-        
-        do {
-            audio1 = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound1!))
-            audio2 = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound2!))
-        } catch {
-            print(error)
-        }
-        
-        questions = [Question(question: "Identify the word you hear", answers: ["ときどき", "どきどき"], answer: 1, audioPlayer: audio1), Question(question: "Select the correct spelling", answers: ["だいがく", "たいがく"], answer: 0, audioPlayer: audio2)]
-        questions.shuffle() //randomize
-        
         NextButton.setTitle("Next Question", for: .normal)
         
         hide()
-        pickQuestion()
+        pickNextQuestion()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func pickQuestion(){
-        if questions.count > 0{
-            qNumber = 0 //always start at index 0
-            QLabel.text = questions[qNumber].question
-            ansNumber = questions[qNumber].answer
+    func pickNextQuestion(){
+        let question = quiz.pickQuestion()
+        if (question == nil){
+            //unwind
+            NSLog("unwinding")
+        } else {
+            QLabel.text = question!.question
+            ansNumber = question!.answer
             
             //fill in the buttons
             for i in 0..<Buttons.count{
-                Buttons[i].setTitle(questions[qNumber].answers[i], for: .normal)
+                Buttons[i].setTitle(question!.answers[i], for: .normal)
             }
             
-            audioPlayer = questions[qNumber].audioPlayer
-            
-            //prevent repetition
-            questions.remove(at: qNumber)
-        } else {
-            //done with all questions
-            NSLog("Done!")
+            audioPlayer = question!.audioPlayer
         }
-        
-        
     }
     
     private func hide(){
@@ -126,7 +97,7 @@ class QuizViewController: UIViewController {
     @IBAction func nextQuestion(_ sender: Any) {
         audioPlayer.stop()
         hide()
-        pickQuestion()
+        pickNextQuestion()
         for b in Buttons{
             b.isEnabled = true
         }
