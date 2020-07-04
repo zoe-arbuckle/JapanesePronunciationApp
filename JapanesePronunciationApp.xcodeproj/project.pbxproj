@@ -30,6 +30,7 @@
 		C8E7DA1A24AFB39B003DDD7C /* kaisya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA1024AFB39B003DDD7C /* kaisya.mp3 */; };
 		C8E7DA1B24AFB39B003DDD7C /* gaikoku.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA1124AFB39B003DDD7C /* gaikoku.mp3 */; };
 		C8E7DA1D24AFB5F1003DDD7C /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E7DA1C24AFB5F1003DDD7C /* Quiz.swift */; };
+		C8E7DA1F24AFCDA4003DDD7C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C8E7DA1E24AFCDA4003DDD7C /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		C8E7DA1024AFB39B003DDD7C /* kaisya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = kaisya.mp3; sourceTree = "<group>"; };
 		C8E7DA1124AFB39B003DDD7C /* gaikoku.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gaikoku.mp3; sourceTree = "<group>"; };
 		C8E7DA1C24AFB5F1003DDD7C /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		C8E7DA1E24AFCDA4003DDD7C /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				C83D22D2248839F60015F60D /* Assets.xcassets */,
 				C83D22D4248839F60015F60D /* LaunchScreen.storyboard */,
 				C83D22D7248839F60015F60D /* Info.plist */,
+				C8E7DA1E24AFCDA4003DDD7C /* data.json */,
 			);
 			path = JapanesePronunciationApp;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C83D22D6248839F60015F60D /* LaunchScreen.storyboard in Resources */,
+				C8E7DA1F24AFCDA4003DDD7C /* data.json in Resources */,
 				C83D22D3248839F60015F60D /* Assets.xcassets in Resources */,
 				C8E7DA1A24AFB39B003DDD7C /* kaisya.mp3 in Resources */,
 				C8E7DA1524AFB39B003DDD7C /* tokidoki.mp3 in Resources */,
