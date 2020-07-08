@@ -107,13 +107,30 @@ class LessonTableViewController: UITableViewController {
     //MARK: Private Methods
     
     private func loadLessons() {
-//        let photo1 = UIImage(named: "emptyImage")
-//
-//        guard let introduction = Lesson(name: "Introduction to Japanese Accents 日本語のアクセントの練習", description: "Basics of Japanese Rythmic Unit: Mora", photo: photo1, lessonInfo: "First, you will learn about basic rhythic unit, called \"mora.\"\nMora is a technical term that linguists use to define a phonological unit of a language. It is different from syllable. In Japanese, you can think of each kana corresponding a mora. For example, ぼく(\"boku\") consists of two moras, and わたし (\"watashi\") consists of three moras. A double consonant written with small つ (\"tsu\") and nasal sound ん (\"n\") constitute a mora. A glide such as きゃ (\"kya\") and びょ (\"byo\") constitute a mora although it is written with two kana. A long vowel like こう (pronounced as long こ) is considered two moras. Thus, こうこう (high school) has four moras while ここ (here) has two.\nReview the following words and tnumber of mora for each word to understand the principle.\n") else {
-//            fatalError("Unable to instantiate lesson")
-//        }
-//
-//        lessons += [introduction, earTraining1, earTraining2, earTraining3, earTraining4, pitchAccent, pitchPatterns]
+        let photo1 = UIImage(named: "emptyImage")
+
+        guard let introduction = Lesson(name: "Introduction to Japanese Accents 日本語のアクセントの練習", description: "Basics of Japanese Rythmic Unit: Mora", photo: photo1, lessonInfo: "First, you will learn about basic rhythic unit, called \"mora.\"\nMora is a technical term that linguists use to define a phonological unit of a language. It is different from syllable. In Japanese, you can think of each kana corresponding a mora. For example, ぼく(\"boku\") consists of two moras, and わたし (\"watashi\") consists of three moras. A double consonant written with small つ (\"tsu\") and nasal sound ん (\"n\") constitute a mora. A glide such as きゃ (\"kya\") and びょ (\"byo\") constitute a mora although it is written with two kana. A long vowel like こう (pronounced as long こ) is considered two moras. Thus, こうこう (high school) has four moras while ここ (here) has two.\nReview the following words and tnumber of mora for each word to understand the principle.\n") else {
+            fatalError("Unable to instantiate lesson")
+        }
+        
+        let file = Bundle.main.url(forResource: "data", withExtension: "json")
+        
+        guard let jsonData = file else{
+                NSLog("Could not read local json data")
+                return
+        }
+        guard let data = try? Data(contentsOf: jsonData) else {
+                NSLog("Could not read data")
+                return}
+        guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else{return}
+        
+        if let dictionary = json as? [String: Any]{
+            let lessonOne = Lesson(json: dictionary)!
+            lessons += [introduction, lessonOne]
+        } else{
+            lessons += [introduction]
+        }
+        
         
         
     }

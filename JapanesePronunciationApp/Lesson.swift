@@ -15,6 +15,7 @@ class Lesson {
     var description: String
     var photo: UIImage?
     var lessonInfo: String
+    var quiz: Quiz?
     
     //MARK: Initialization
     
@@ -22,11 +23,21 @@ class Lesson {
         if name.isEmpty || description.isEmpty {
             return nil
         }
-        
+
         //init stored properties
         self.name = name
         self.description = description
         self.photo = photo
         self.lessonInfo = lessonInfo
+    }
+    
+    init?(json: [String: Any]){
+        self.name = json["lessonName"] as! String
+        self.description = json["lessonDescription"] as! String
+        
+        let photoName = json["lessonImage"] as! String
+        self.photo = UIImage(named: photoName)
+        
+        self.lessonInfo = json["lessonText"] as! String
     }
 }
