@@ -29,6 +29,7 @@ class Lesson {
         self.description = description
         self.photo = photo
         self.lessonInfo = lessonInfo
+        self.quiz = Quiz(lessonName: self.name)
     }
     
     init?(json: [String: Any]){
@@ -39,5 +40,14 @@ class Lesson {
         self.photo = UIImage(named: photoName)
         
         self.lessonInfo = json["lessonText"] as! String
+        
+        //remember this can be null, you are explicitly unwrapping
+        if let dict = json["quiz"] as? [String: Any] {
+            let questions = dict["questions"] as! [NSObject]
+        
+            self.quiz = Quiz(questionArray: questions)
+        } else {
+            self.quiz = Quiz(lessonName: self.name)
+        }
     }
 }

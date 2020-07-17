@@ -123,15 +123,12 @@ class LessonTableViewController: UITableViewController {
                 NSLog("Could not read data")
                 return}
         guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else{return}
-        
         if let dictionary = json as? [String: Any]{
             let lessonOne = Lesson(json: dictionary)!
             lessons += [introduction, lessonOne]
         } else{
             lessons += [introduction]
         }
-        
-        
         
     }
 

@@ -42,6 +42,26 @@ class Quiz {
         questions.shuffle() //randomize
     }
     
+    init?(questionArray: [NSObject]){
+        for obj in questionArray{
+            let q = obj.value(forKey: "question") as! String
+            let answers = obj.value(forKey: "answers") as! [String]
+            let answer = obj.value(forKey: "answer") as! Int
+            let audio = obj.value(forKey: "audioName") as! String
+            
+            let sound = Bundle.main.path(forResource: audio, ofType: "mp3")
+            var audioPlayer = AVAudioPlayer()
+            
+            do{
+                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+            } catch {
+                print(error)
+            }
+            
+            questions.append(Question(question: q, answers: answers, answer: answer, audioPlayer: audioPlayer))
+        }
+    }
+    
     func pickQuestion() -> Question?{
         var q = Question()
         if questions.count > 0{

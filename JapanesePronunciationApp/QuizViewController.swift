@@ -19,7 +19,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var NextStackView: UIStackView!
     @IBOutlet weak var SoundButton: UIButton!
     
-    var quiz = Quiz(lessonName: "Introduction")!
+    var quiz: Quiz!
     var ansNumber = Int()
     var audioPlayer = AVAudioPlayer()
     
@@ -54,6 +54,8 @@ class QuizViewController: UIViewController {
         }
     }
     
+    // MARK: Private Functions
+    
     private func hide(){
         NextStackView.isHidden = true
         ResultLabel.isHidden = true
@@ -65,6 +67,8 @@ class QuizViewController: UIViewController {
         ResultLabel.isHidden = false
         NextButton.isHidden = false
     }
+    
+    // MARK: Button Actions
     
     @IBAction func playSound(_ sender: Any) {
        audioPlayer.play()
